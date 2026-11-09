@@ -1,0 +1,170 @@
+
+/* buscador de vacantes */
+.buscador {
+    width: 100%;
+}
+
+.buscador label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.buscador input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.75rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    color: var(--color-primario);
+}
+
+/* filtros de vacantes */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.filtro {
+    position: relative;
+}
+
+.filtro summary {
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid #bbbbbb;
+    border-radius: 2rem;
+    padding: 0.65rem 1rem;
+    min-height: 44px;
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filtro summary::-webkit-details-marker {
+    display: none;
+}
+
+.filtro summary::after {
+    content: "⌄";
+    font-family: var(--fuente-texto);
+}
+
+.opciones-filtro {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    width: 13rem;
+    padding: 1rem;
+    background-color: var(--color-secundario);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px #00000020;
+}
+
+.opciones-filtro label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+}
+
+.opciones-filtro input {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* tarjetas de vacantes */
+.vacantes {
+    margin-top: 1.5rem;
+}
+
+.vacantes h2 {
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-vacante {
+    border: 1px solid #bbbbbb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    min-width: 0;
+}
+
+.tarjeta-vacante h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+}
+
+.tarjeta-vacante p {
+    font-size: 1.125rem;
+    margin: 0 0 0.75rem;
+}
+
+.empresa, .salario, .ubicacion {
+    font-weight: 600;
+}
+
+/* botones de las vacantes */
+.acciones-vacante {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.acciones-vacante a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 44px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.boton-detalles {
+    flex: 1;
+    border: 1px solid #bbbbbb;
+    color: var(--color-primario);
+    background-color: white;
+}
+
+.boton-postular {
+    flex: 1;
+    background-color: var(--color-acento);
+    color: white;
+}
+
+/* iconos de las tarjetas */
+.empresa, .salario, .ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.empresa img, .salario img, .ubicacion img {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.empresa img {
+    width: 28px;
+    height: 28px;
+}

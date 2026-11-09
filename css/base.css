@@ -1,0 +1,33 @@
+
+/* estilos generales de la pagina */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-base);
+    font-weight: var(--peso-texto);
+    color: var(--color-primario);
+    background-color: var(--color-fondo);
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 3px;
+}

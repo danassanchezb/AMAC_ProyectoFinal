@@ -1,0 +1,284 @@
+
+/* regresar */
+.regresar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.regresar img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* contenido principal */
+.contenedor-detalle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.detalle-vacante {
+    min-width: 0;
+}
+
+/* encabezado de la vacante */
+.encabezado-detalle h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.nombre-empresa {
+    color: var(--color-acento);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.encabezado-detalle .ubicacion {
+    margin-bottom: 1.5rem;
+}
+
+/* informacion del empleo */
+.informacion-empleo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dato-empleo h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.dato-empleo p {
+    margin: 0;
+}
+
+/* secciones de informacion */
+.descripcion-vacante,
+.responsabilidades,
+.requisitos,
+.prestaciones,
+.proceso-seleccion {
+    margin-bottom: 0;
+}
+
+.detalle-vacante h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.detalle-vacante p,
+.detalle-vacante li {
+    line-height: 1.6;
+}
+
+.detalle-vacante ul {
+    padding-left: 1.5rem;
+}
+
+.detalle-vacante li {
+    margin-bottom: 0.5rem;
+}
+
+/* botones de postulacion para telefono */
+.tarjeta-postulacion {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.tarjeta-postulacion > h2 {
+    display: none;
+}
+
+.acciones-detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.acciones-detalle a,
+.acciones-detalle button,
+.boton-llamar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.acciones-detalle .boton-postular {
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+}
+
+/* botones ocultos en telefono */
+.acciones-detalle .boton-guardar,
+.acciones-detalle .boton-compartir {
+    display: none;
+    background-color: white;
+    color: var(--color-primario);
+    border: 1px solid #bbbbbb;
+}
+
+/* contacto */
+.contacto-vacante {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.contacto-vacante h2,
+.contacto-vacante p {
+    display: none;
+}
+
+.boton-llamar {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+/* pie de pagina */
+.pie-pagina {
+    padding: 2rem 1rem;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}
+
+.enlaces-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.enlaces-footer a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+/* quitar espacio abajo del footer */
+body {
+    padding-bottom: 0;
+}
+
+/* ajustes para computadora */
+@media (min-width: 1024px) {
+    /* contenido en dos columnas */
+    .contenedor-detalle {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 2rem;
+        align-items: start;
+    }
+    /* encabezado */
+    .encabezado-detalle h1 {
+        font-size: 3rem;
+    }
+    .nombre-empresa {
+        margin-bottom: 0.75rem;
+    }
+    /* informacion del empleo en tres columnas */
+    .informacion-empleo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .dato-empleo h3 {
+        margin-bottom: 0.5rem;
+    }
+    /* tarjeta de postulacion */
+    .tarjeta-postulacion {
+        background-color: white;
+        border: 1px solid #dddddd;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        align-self: start;
+    }
+    .tarjeta-postulacion > h2 {
+        display: block;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .acciones-detalle {
+        margin-bottom: 0;
+    }
+    .acciones-detalle a,
+    .acciones-detalle button,
+    .boton-llamar {
+        min-height: 44px;
+        font-size: 1rem;
+    }
+    .acciones-detalle .boton-guardar,
+    .acciones-detalle .boton-compartir {
+        display: flex;
+    }
+    /* contacto */
+    .contacto-vacante {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #dddddd;
+    }
+    .contacto-vacante h2,
+    .contacto-vacante p {
+        display: block;
+    }
+    .contacto-vacante h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .contacto-vacante p {
+        margin-bottom: 1rem;
+    }
+    /* pie de pagina */
+    .pie-pagina {
+        padding: 2rem;
+    }
+    /* ocultar boton de ayda duplicado en computadora */
+    .boton-ayuda {
+        display: none;
+    }
+    /* centrar contenido de computadora */
+    #principal {
+        max-width: 1440px;
+        margin: 0 auto;
+        background-color: #F5F5F5;
+    }
+    body {
+        background-color: #F5F5F5;
+    }
+    /* logo y nombre de la plataforma */
+    .logo {
+        gap: 1rem;
+    }
+    .logo .texto-logo {
+        display: inline;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}

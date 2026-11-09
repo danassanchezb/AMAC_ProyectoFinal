@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vacantes disponibles | AMAC</title>
+
+    <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:wght@400;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- archivos css -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="imagenes/logo-amac.svg" alt="AMAC Bolsa de trabajo">
+                <span class="texto-logo">Bolsa de trabajo</span>
+            </div>
+            <div class="enlaces-nav">
+                <a href="index.html">Buscar Empleo</a>
+                <a href="mis_solicitudes.html">Mis postulaciones</a>
+            </div>
+            <div class="acciones-encabezado">
+                <a href="#ayuda" class="boton-ayuda">Ayuda</a>
+                <a href="login.html" class="salir" aria-label="Cerrar sesión">
+                    <img src="imagenes/salir.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="principal">
+
+        <!-- introduccion para computadora -->
+        <section class="introduccion">
+            <h1>Tu próximo trabajo empieza aquí.</h1>
+            <p>Explora las vacantes de AMAC y encuentra una oportunidad que se adapte a ti.</p>
+        </section>
+
+        <!-- buscador de vacantes -->
+        <section class="buscador" aria-label="Buscar vacantes">
+            <form action="index.html" method="get">
+                <label for="buscar-trabajo">Buscar trabajo</label>
+                <input type="search" id="buscar-trabajo"
+                    name="buscar"
+                    placeholder="Buscar trabajo, compañía...">
+            </form>
+        </section>
+
+        <div class="contenido-vacantes">
+            <!-- filtros de vacantes -->
+            <section class="filtros" aria-label="Filtros de vacantes">
+                <details class="filtro">
+                    <summary>Horarios</summary>
+                    <div class="opciones-filtro">
+                        <label><input type="checkbox"> Tiempo completo</label>
+                        <label><input type="checkbox"> Medio tiempo</label>
+                    </div>
+                </details>
+                <details class="filtro">
+                    <summary>Categorías</summary>
+                    <div class="opciones-filtro">
+                        <label><input type="checkbox"> Operativo</label>
+                        <label><input type="checkbox"> Administrativo</label>
+                        <label><input type="checkbox"> Seguridad</label>
+                        <label><input type="checkbox"> Ventas</label>
+                        <label><input type="checkbox"> Atención al cliente</label>
+                    </div>
+                </details>
+                <details class="filtro">
+                    <summary>Distancia</summary>
+                    <div class="opciones-filtro">
+                        <label><input type="radio" name="distancia"> Menos de 5 km</label>
+                        <label><input type="radio" name="distancia"> 5 a 10 km</label>
+                        <label><input type="radio" name="distancia"> 10 a 20 km</label>
+                        <label><input type="radio" name="distancia"> Cualquier distancia</label>
+                    </div>
+                </details>
+            </section>
+
+            <!-- listado de vacantes -->
+            <section class="vacantes">
+                <h2>Trabajos recomendados</h2>
+
+                <!-- tarjeta de vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Cajero</h3>
+                        <div class="acciones-vacante">
+                                <a href="vacante.html" class="boton-detalles"> Ver detalles → </a>
+                                <a href="mis_solicitudes.html" class="boton-postular">
+                                    Postularse
+                                </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        OXXO
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $7,500 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Monterrey, Nuevo León
+                    </p>
+                </article>
+
+                <!-- segunda vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Asistente de tienda</h3>
+                        <div class="acciones-vacante">
+                            <a href="vacante.html" class="boton-detalles">Ver detalles →</a>
+                            <a href="mis_solicitudes.html" class="boton-postular">
+                                Postularse
+                            </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        Soriana
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $8,200 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Guadalajara, Jalisco
+                    </p>
+                </article>
+                
+                <!-- tercera vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Promotor de ventas</h3>
+                        <div class="acciones-vacante">
+                            <a href="vacante.html" class="boton-detalles">Ver detalles →</a>
+                            <a href="mis_solicitudes.html" class="boton-postular">
+                                Postularse
+                            </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        Liverpool
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $9,800 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Ciudad de México
+                    </p>
+                </article>
+
+                <!-- cuarta vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Auxiliar administrativo</h3>
+                        <div class="acciones-vacante">
+                            <a href="vacante.html" class="boton-detalles">Ver detalles →</a>
+                            <a href="mis_solicitudes.html" class="boton-postular">
+                                Postularse
+                            </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        Grupo Bimbo
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $10,500 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Monterrey, Nuevo León
+                    </p>
+                </article>
+
+                <!-- quinta vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Atención al cliente</h3>
+                        <div class="acciones-vacante">
+                            <a href="vacante.html" class="boton-detalles">Ver detalles →</a>
+                            <a href="mis_solicitudes.html" class="boton-postular">
+                                Postularse
+                            </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        Cinepolis
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $8,500 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Guadalajara, Jalisco
+                    </p>
+                </article>
+
+                <!-- sexta vacante -->
+                <article class="tarjeta-vacante">
+                    <div class="encabezado-vacante">
+                        <h3>Guardia de seguridad</h3>
+                        <div class="acciones-vacante">
+                            <a href="vacante.html" class="boton-detalles">Ver detalles →</a>
+                            <a href="mis_solicitudes.html" class="boton-postular">
+                                Postularse
+                            </a>
+                        </div>
+                    </div>
+                    <p class="empresa">
+                        <img src="imagenes/empresa.svg" alt="">
+                        Empresa de seguridad
+                    </p>
+                    <p class="salario">
+                        <img src="imagenes/salario.svg" alt="">
+                        $9,000 MXN/mensuales
+                    </p>
+                    <p class="ubicacion">
+                        <img src="imagenes/ubicacion.svg" alt="">
+                        Ciudad de México
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 AMAC</p>
+    </footer>
+
+
+    
+    <!-- navegacion inferior para celular -->
+    <nav class="nav-inferior" aria-label="Navegación móvil">
+        <a href="index.html" aria-current="page">
+            <img src="imagenes/buscar.svg" alt="">
+            Buscar
+        </a>
+        <a href="mis_solicitudes.html">
+            <img src="imagenes/mis-empleos.svg" alt="">
+            Mis empleos
+        </a>
+        <a href="login.html">
+            <img src="imagenes/perfil.svg" alt="">
+            Perfil
+        </a>
+        <a href="#ayuda">
+            <img src="imagenes/ayuda.svg" alt="">
+            Ayuda
+        </a>
+    </nav>
+
+</body>
+</html>

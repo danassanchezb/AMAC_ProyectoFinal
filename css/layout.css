@@ -1,0 +1,252 @@
+
+/* encabezado */
+.encabezado {
+    background-color: var(--color-primario);
+    padding: 1rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 0.5rem;
+}
+
+/* logo de AMAC */
+.logo img {
+    display: block;
+    width: 9rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* enlaces */
+.enlaces-nav {
+    display: none;
+}
+
+.texto-logo {
+    display: none;
+}
+
+/* boton de ayuda */
+.boton-ayuda {
+    background-color: var(--color-acento);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* icono de salida */
+.salir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.salir img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* navegacion inferior para celular */
+.nav-inferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #cccccc;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.nav-inferior a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.nav-inferior img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* espacio para que la barra no tape el contenido */
+body {
+    padding-bottom: 5.5rem;
+}
+
+/* contenido principal */
+#principal {
+    padding: 1rem;
+}
+
+/* ocultar introduccion en celular */
+.introduccion {
+    display: none;
+}
+
+/* distribucion de filtros y vacantes */
+.contenido-vacantes {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+/* encabezado de las tarjetas en celular */
+.encabezado-vacante {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* diseño para computadora */
+@media (min-width: 768px) {
+
+    .encabezado {
+        padding: 1rem 2rem;
+    }
+    .enlaces-nav {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .enlaces-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .texto-logo {
+        display: inline;
+        font-size: 1.25rem;
+    }
+    .boton-ayuda::after {
+        content: " gratuita";
+    }
+    .salir {
+        display: none;
+    }
+    .nav-inferior {
+        display: none;
+    }
+    body {
+        padding-bottom: 0;
+    }
+    #principal {
+        padding: 2rem;
+    }
+    .introduccion {
+        display: block;
+    }
+}
+
+/* mantener los botones abajo en telefono y tablet */
+@media (max-width: 1023px) {
+
+    .tarjeta-vacante {
+        display: flex;
+        flex-direction: column;
+    }
+    .encabezado-vacante {
+        display: contents;
+    }
+    .acciones-vacante {
+        order: 4;
+    }
+}
+
+/* diseño para computadora grande */
+@media (min-width: 1024px) {
+    /* distribucion de filtros y vacantes */
+    .contenido-vacantes {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 2rem;
+        align-items: start;
+        margin-top: 2rem;
+    }
+    .contenido-vacantes .filtros {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 0;
+    }
+    .contenido-vacantes .vacantes {
+        margin-top: 0;
+        min-width: 0;
+    }
+    .contenido-vacantes .filtro summary {
+        background-color: var(--color-secundario);
+        border-radius: 0.5rem;
+    }
+    /* botones de las vacantes */
+    .acciones-vacante {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.75rem;
+    }
+    .acciones-vacante a {
+        flex: 0 0 auto;
+        width: auto;
+        min-width: 8rem;
+    }
+    /* encabezado de las tarjetas */
+    .encabezado-vacante {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .encabezado-vacante h3 {
+        margin: 0;
+    }
+}
+
+/* ayuda y cerrar sesion */
+.acciones-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acciones-encabezado .salir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acciones-encabezado .salir img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+

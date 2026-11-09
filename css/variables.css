@@ -1,0 +1,17 @@
+
+:root {
+    /* colores de figma */
+    --color-primario: #202945;
+    --color-fondo: #FFFFFF;
+    --color-secundario: #CAE4EF;
+    --color-acento: #FF815C;
+
+    /* tipografia */
+    --fuente-titulos: 'Baskervville', serif;
+    --titulo-principal: 3.25rem; /* 52/16 */
+    --peso-titulo: 600;
+
+    --fuente-texto: 'Work Sans', sans-serif;
+    --texto-base: 1.25rem; /* 20/16 */
+    --peso-texto: 400;
+}

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis solicitudes | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/mis_solicitudes.css">
+</head>
+
+<body class="pagina-solicitudes">
+
+    <!-- encabezado para telefono -->
+    <div class="encabezado-solicitudes-movil">
+        <a href="index.html" class="flecha-regresar">
+            <img src="imagenes/flecha.svg" alt="Regresar">
+        </a>
+        <h1 class="titulo-solicitudes-movil">Mis solicitudes</h1>
+    </div>
+
+    <!-- encabezado -->
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-amac.svg" alt="Logo AMAC">
+            </a>
+            <div class="enlaces-nav">
+                <a href="index.html">Buscar empleo</a>
+                <a href="mis_solicitudes.html">Mis postulaciones</a>
+            </div>
+            <div class="acciones-encabezado">
+                <a href="#" class="boton-ayuda">Ayuda</a>
+                <a href="login.html" class="salir" aria-label="Cerrar sesión">
+                    <img src="imagenes/salir.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="principal">
+
+        <!-- titulo -->
+        <section class="encabezado-solicitudes">
+            <h1>Mis postulaciones</h1>
+            <p>Tienes 3 postulaciones activas</p>
+        </section>
+
+        
+        <!-- listado de postulaciones -->
+        <section class="lista-solicitudes">
+
+            <!-- primera postulacion -->
+            <article class="tarjeta-solicitud">
+                <div class="informacion-solicitud">
+                    <p class="fecha-solicitud">24 OCT 2026</p>
+                    <h2>Asistente de Biblioteca</h2>
+                    <p class="empresa-solicitud">Biblioteca Pública Municipal</p>
+                    <p class="detalles-solicitud">
+                        Centro Histórico, CDMX | Tiempo completo
+                    </p>
+                </div>
+
+                <div class="acciones-solicitud">
+                    <span class="estado-solicitud pendiente">Pendiente</span>
+                    <button type="button" class="boton-solicitud">
+                        Cancelar postulación
+                    </button>
+                </div>
+            </article>
+
+            <!-- segunda postulacion -->
+            <article class="tarjeta-solicitud">
+                <div class="informacion-solicitud">
+                    <p class="fecha-solicitud">15 OCT 2026</p>
+                    <h2>Representante de Atención al Cliente</h2>
+                    <p class="empresa-solicitud">SaludPrimera Soluciones</p>
+                    <p class="detalles-solicitud">
+                        Remoto / Trabajo desde casa | Medio tiempo
+                    </p>
+                </div>
+
+                <div class="acciones-solicitud">
+                    <span class="estado-solicitud aceptado">Aceptado</span>
+                    <button type="button" class="boton-solicitud boton-oscuro">
+                        Siguientes pasos
+                    </button>
+                </div>
+            </article>
+
+            <!-- tercera postulacion -->
+            <article class="tarjeta-solicitud">
+                <div class="informacion-solicitud">
+                    <p class="fecha-solicitud">10 OCT 2026</p>
+                    <h2>Consultor de Jardinería</h2>
+                    <p class="empresa-solicitud">Vivero Verde Esperanza</p>
+                    <p class="detalles-solicitud">
+                        Zona Oriente, CDMX | Tiempo completo
+                    </p>
+                </div>
+
+                <div class="acciones-solicitud">
+                    <span class="estado-solicitud rechazado">Rechazado</span>
+                    <button type="button" class="boton-solicitud">
+                        Ver comentarios
+                    </button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+    
+        
+    <!-- navegacion inferior para telefono -->
+    <nav class="navegacion-inferior" aria-label="Navegación de candidatos">
+        <a href="index.html">
+            <img src="imagenes/buscar.svg" alt="">
+            <span>Buscar</span>
+        </a>
+        <a href="mis_solicitudes.html" class="activo" aria-current="page">
+            <img src="imagenes/mis-empleos.svg" alt="">
+            <span>Mis empleos</span>
+        </a>
+        <a href="registro_candidato.html">
+            <img src="imagenes/perfil.svg" alt="">
+            <span>Perfil</span>
+        </a>
+        <a href="#">
+            <img src="imagenes/ayuda.svg" alt="">
+            <span>Ayuda</span>
+        </a>
+    </nav>
+    <footer class="pie-pagina">
+        <p>© 2026 AMAC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
