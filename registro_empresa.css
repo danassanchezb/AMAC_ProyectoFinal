@@ -1,0 +1,251 @@
+
+/* registro de empresa */
+.pagina-registro-empresa {
+    padding-bottom: 0;
+}
+
+/* enlace para regresar */
+.pagina-registro-empresa .regresar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pagina-registro-empresa .regresar img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* titulo principal */
+.pagina-registro-empresa h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* formulario */
+.formulario-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* secciones del formulario */
+.seccion-empresa {
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.seccion-empresa h2,
+.identidad-visual h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* campos */
+.campos-empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.campo-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campo-empresa label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.campo-empresa input,
+.campo-empresa select {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.75rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: var(--color-primario);
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+}
+
+.identidad-visual {
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+}
+
+.archivos-empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* cuadros para subir imagenes */
+.subir-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    border: 2px dashed #aaaaaa;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.subir-imagen label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.subir-imagen input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    font-family: var(--fuente-texto);
+    font-size: 0.875rem;
+}
+
+/* terms y cond */
+.aceptaciones-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.aceptaciones-empresa label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.aceptaciones-empresa input {
+    margin-top: 0.2rem;
+}
+
+/* boton registrarme */
+.boton-registrar-empresa {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* enlace para iniciar sesion */
+.enlace-login-empresa {
+    margin: 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.enlace-login-empresa a {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+/* footer */
+.pagina-registro-empresa .pie-pagina {
+    display: none;
+}
+
+/* botones para subir imagenes */
+.subir-imagen p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.boton-subir {
+    display: inline-block;
+    align-self: center;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subir-imagen input:focus-visible + .boton-subir {
+    outline: 2px solid var(--color-primario);
+}
+
+/* version computadora */
+@media (min-width: 1024px) {
+    /* contenido principal */
+    .pagina-registro-empresa #principal {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    /* titulo */
+    .pagina-registro-empresa h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    /* formulario */
+    .formulario-empresa {
+        gap: 2rem;
+    }
+    /* secciones */
+    .seccion-empresa,
+    .identidad-visual {
+        padding: 2rem;
+    }
+    .seccion-empresa h2,
+    .identidad-visual h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    /* campos en dos columnas */
+    .campos-empresa {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    /* campos que ocupan todo el ancho */
+    .campo-completo {
+        grid-column: 1 / -1;
+    }
+    /* imagnes una al lado de la otra */
+    .archivos-empresa {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .subir-imagen {
+        padding: 2rem;
+    }
+    /* boton de registro */
+    .boton-registrar-empresa {
+        max-width: 350px;
+        align-self: center;
+    }
+    /* footer en computadora */
+    .pagina-registro-empresa .pie-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        background-color: var(--color-primario);
+        color: white;
+        font-size: 0.875rem;
+    }
+    .pagina-registro-empresa .pie-pagina a {
+        color: white;
+        text-decoration: none;
+    }
+}

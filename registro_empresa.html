@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de empresa | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/registro_empresa.css">
+</head>
+
+<body class="pagina-registro-empresa">
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-amac.svg" alt="Logo AMAC">
+            </a>
+
+            <div class="enlaces-nav">
+                <a href="empresa_vacantes.html">Panel</a>
+                <a href="empresa_vacantes.html">Candidatos</a>
+            </div>
+
+            <a href="#" class="boton-ayuda">Ayuda</a>
+        </nav>
+    </header>
+
+    <main id="principal">
+        <!-- boton para regresar -->
+        <a href="login_empresa.html" class="regresar">
+            <img src="imagenes/flecha.svg" alt="">
+            Regresar
+        </a>
+        <h1>Registro de Empresa</h1>
+        
+        <form action="empresa_vacantes.html" method="get" class="formulario-empresa">
+            <!-- datos de la empresa -->
+            <section class="seccion-empresa">
+                <h2>Datos de la empresa</h2>
+                <div class="campos-empresa">
+                    <div class="campo-empresa">
+                        <label for="nombre-empresa">Nombre de la empresa</label>
+                        <input type="text" id="nombre-empresa" name="nombre-empresa"
+                            placeholder="Nombre de la empresa" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="industria">Industria/Giro</label>
+                        <select id="industria" name="industria" required>
+                            <option value="">Seleccionar</option>
+                            <option value="comercio">Comercio</option>
+                            <option value="servicios">Servicios</option>
+                            <option value="industria">Industria</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="rfc">RFC</label>
+                        <input type="text" id="rfc" name="rfc"
+                            placeholder="RFC" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="telefono-empresa">Teléfono</label>
+                        <input type="tel" id="telefono-empresa" name="telefono-empresa"
+                            placeholder="Teléfono" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="correo-empresa">Correo electrónico</label>
+                        <input type="email" id="correo-empresa" name="correo-empresa"
+                            placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="contrasena-empresa">Contraseña</label>
+                        <input type="password" id="contrasena-empresa" name="contrasena-empresa"
+                            placeholder="Contraseña" required>
+                    </div>
+                </div>
+            </section>
+
+            <!-- direccion de la empresa -->
+            <section class="seccion-empresa">
+                <h2>Dirección</h2>
+                <div class="campos-empresa">
+                    <div class="campo-empresa">
+                        <label for="calle">Calle</label>
+                        <input type="text" id="calle" name="calle"
+                            placeholder="Calle" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="colonia">Colonia</label>
+                        <input type="text" id="colonia" name="colonia"
+                            placeholder="Colonia" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="codigo-postal">C.P.</label>
+                        <input type="text" id="codigo-postal" name="codigo-postal"
+                            placeholder="Código postal" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad"
+                            placeholder="Ciudad" required>
+                    </div>
+                </div>
+            </section>
+
+            <!-- persona de contacto -->
+            <section class="seccion-empresa">
+                <h2>Persona de Contacto</h2>
+                <div class="campos-empresa">
+                    <div class="campo-empresa campo-completo">
+                        <label for="nombre-contacto">Nombre completo</label>
+                        <input type="text" id="nombre-contacto" name="nombre-contacto"
+                            placeholder="Nombre completo" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="telefono-contacto">Teléfono</label>
+                        <input type="tel" id="telefono-contacto" name="telefono-contacto"
+                            placeholder="Teléfono" required>
+                    </div>
+                    <div class="campo-empresa">
+                        <label for="correo-contacto">Correo electrónico</label>
+                        <input type="email" id="correo-contacto" name="correo-contacto"
+                            placeholder="Correo" required>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- identidad visual -->
+            <section class="identidad-visual">
+                <h2>Identidad Visual</h2>
+
+                <div class="archivos-empresa">
+                    <!-- subir logotipo -->
+                    <div class="subir-imagen">
+                        <p>Subir Logotipo</p>
+                        <label for="logotipo" class="boton-subir">
+                            Seleccionar imagen
+                        </label>
+                        <input type="file" id="logotipo" name="logotipo"
+                            accept="image/*">
+                    </div>
+
+                    <!-- subir portada -->
+                    <div class="subir-imagen">
+                        <p>Subir Portada</p>
+                        <label for="portada" class="boton-subir">
+                            Seleccionar imagen
+                        </label>
+                        <input type="file" id="portada" name="portada"
+                            accept="image/*">
+                    </div>
+                </div>
+            </section>
+
+            <!-- terminos y condiciones -->
+            <div class="aceptaciones-empresa">
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los Términos y Condiciones
+                </label>
+
+                <label>
+                    <input type="checkbox" name="privacidad" required>
+                    Acepto el Aviso de Privacidad
+                </label>
+            </div>
+
+            <!-- boton de registro -->
+            <button type="submit" class="boton-registrar-empresa">
+                Registrarme
+            </button>
+
+            <!-- enlace para iniciar sesion -->
+            <p class="enlace-login-empresa">
+                ¿Ya tienes una cuenta?
+                <a href="login_empresa.html">Inicia sesión aquí</a>
+            </p>
+        </form>
+    </main>
+
+    
+    <footer class="pie-pagina">
+        <p>© 2026 AMAC. Todos los derechos reservados.</p>
+        <a href="#">Ayuda</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacantes publicadas | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/empresa_vacantes.css">
+</head>
+
+<body class="pagina-empresa-vacantes">
+
+    <!-- encabezado -->
+    <header class="encabezado">
+        <nav class="navegacion">
+            <!-- menu para telefono -->
+            <a href="#principal" class="menu-empresa" aria-label="Ir al contenido">
+                ☰
+            </a>
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-amac.svg" alt="Logo AMAC">
+            </a>
+            <div class="enlaces-nav">
+                <a href="empresa_vacantes.html">Panel</a>
+                <a href="candidatos_empresa.html">Candidatos</a>
+            </div>
+            <div class="opciones-cuenta-empresa">
+                <a href="registro_empresa.html">Mi perfil</a>
+            </div>
+
+            <div class="acciones-encabezado-empresa">
+                <a href="#" class="boton-ayuda">Ayuda</a>
+                <a href="login_empresa.html" class="cerrar-sesion" aria-label="Cerrar sesión">
+                    <img src="imagenes/salir.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="principal">
+        <!-- regresar en telefono -->
+        <a href="login_empresa.html" class="regresar-empresa">
+            ← Regresar
+        </a>
+        <!-- titulo y boton -->
+        <section class="encabezado-vacantes">
+            <h1>Vacantes publicadas</h1>
+
+            <a href="#" class="boton-publicar">
+                + Publicar nueva vacante
+            </a>
+        </section>
+        
+        <!-- listado de vacantes -->
+        <section class="lista-vacantes-empresa">
+            <!-- primera vacante -->
+            <article class="tarjeta-vacante-empresa">
+                <div class="informacion-vacante-empresa">
+                    <div class="titulo-vacante-empresa">
+                        <h2>Ingeniero de Software</h2>
+                        <span class="estado-vacante activa">ACTIVA</span>
+                    </div>
+                    <p class="fecha-vacante">▦ 5 OCT 2026</p>
+                    <a href="candidatos_empresa.html" class="candidatos-vacante">
+                        <img src="imagenes/perfil.svg" alt="">
+                        12 Candidatos →
+                    </a>
+                </div>
+                <div class="acciones-vacante-empresa">
+                    <button type="button" class="boton-editar">
+                        Editar
+                    </button>
+                    <button type="button" class="boton-pausar">
+                        Pausar
+                    </button>
+                    <button type="button" class="boton-cerrar">
+                        Cerrar vacante
+                    </button>
+                </div>
+            </article>
+
+            <!-- segunda vacante -->
+            <article class="tarjeta-vacante-empresa">
+                <div class="informacion-vacante-empresa">
+                    <div class="titulo-vacante-empresa">
+                        <h2>Analista de Marketing</h2>
+                        <span class="estado-vacante activa">ACTIVA</span>
+                    </div>
+                    <p class="fecha-vacante">▦ 12 OCT 2026</p>
+                    <a href="candidatos_empresa.html" class="candidatos-vacante">
+                        <img src="imagenes/perfil.svg" alt="">
+                        12 Candidatos →
+                    </a>
+                </div>
+                <div class="acciones-vacante-empresa">
+                    <button type="button" class="boton-editar">
+                        Editar
+                    </button>
+                    <button type="button" class="boton-pausar">
+                        Pausar
+                    </button>
+                    <button type="button" class="boton-cerrar">
+                        Cerrar vacante
+                    </button>
+                </div>
+            </article>
+
+            <!-- tercera vacante -->
+            <article class="tarjeta-vacante-empresa">
+                <div class="informacion-vacante-empresa">
+                    <div class="titulo-vacante-empresa">
+                        <h2>Coordinador Administrativo</h2>
+                        <span class="estado-vacante pausada">PAUSADA</span>
+                    </div>
+                    <p class="fecha-vacante">▦ 20 OCT 2026</p>               
+                    <a href="candidatos_empresa.html" class="candidatos-vacante">
+                        <img src="imagenes/perfil.svg" alt="">
+                        12 Candidatos →
+                    </a>
+                </div>
+                <div class="acciones-vacante-empresa">
+                    <button type="button" class="boton-editar">
+                        Editar
+                    </button>
+                    <button type="button" class="boton-pausar">
+                        Pausar
+                    </button>
+                    <button type="button" class="boton-cerrar">
+                        Cerrar vacante
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- navegacion inferior de empresa -->
+    <nav class="navegacion-empresa-inferior" aria-label="Navegación de empresa">
+
+        <a href="empresa_vacantes.html" class="activo" aria-current="page">
+            <img src="imagenes/mis-vacantes.svg" alt="">
+            <span>Mis vacantes</span>
+        </a>
+        <a href="#" >
+            <img src="imagenes/mensajes.svg" alt="">
+            <span>Mensajes</span>
+        </a>
+        <a href="registro_empresa.html">
+            <img src="imagenes/perfil.svg" alt="">
+            <span>Perfil</span>
+        </a>
+    </nav>
+    <footer class="pie-pagina">
+        <p>© 2026 AMAC</p>
+        <p>¿Necesitas ayuda? Contáctanos</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/empresa_vacantes.css">
+    <link rel="stylesheet" href="css/candidatos_empresa.css">
+</head>
+
+<body class="pagina-candidatos-empresa">
+
+    <!-- encabezado -->
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="#principal" class="menu-empresa" aria-label="Ir al contenido">
+                ☰
+            </a>
+            <a href="empresa_vacantes.html" class="logo">
+                <img src="imagenes/logo-amac.svg" alt="Logo AMAC">
+            </a>
+            <div class="enlaces-nav">
+                <a href="empresa_vacantes.html">Panel</a>
+                <a href="candidatos_empresa.html">Candidatos</a>
+            </div>
+            <div class="acciones-encabezado-empresa">
+                <a href="#" class="boton-ayuda">Ayuda</a>
+                <a href="login_empresa.html" class="cerrar-sesion" aria-label="Cerrar sesión">
+                    <img src="imagenes/salir.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="principal">
+        <!-- regresar en telefono -->
+        <a href="empresa_vacantes.html" class="regresar-candidatos">
+            ← Regresar
+        </a>
+        <!-- titulo -->
+        <section class="encabezado-candidatos">
+            <h1>Candidatos</h1>
+            <p>Ingeniero de Software</p>
+        </section>
+        
+        
+        
+        <!-- filtros de candidatos -->
+        <section class="seccion-filtros-candidatos">
+            <div class="formulario-filtros-candidatos">
+                <details class="filtro-candidato">
+                    <summary>Experiencia</summary>
+                    <div class="opciones-filtro-candidato">
+                        <label><input type="checkbox" name="experiencia" value="sin-experiencia"> Sin experiencia</label>
+                        <label><input type="checkbox" name="experiencia" value="principiante"> Principiante</label>
+                        <label><input type="checkbox" name="experiencia" value="intermedio"> Intermedio</label>
+                        <label><input type="checkbox" name="experiencia" value="avanzado"> Avanzado</label>
+                    </div>
+                </details>
+                <details class="filtro-candidato">
+                    <summary>Ubicación</summary>
+                    <div class="opciones-filtro-candidato">
+                        <label><input type="checkbox" name="ubicacion" value="monterrey"> Monterrey</label>
+                        <label><input type="checkbox" name="ubicacion" value="cdmx"> Ciudad de México</label>
+                        <label><input type="checkbox" name="ubicacion" value="guadalajara"> Guadalajara</label>
+                    </div>
+                </details>
+            </div>
+        </section>
+        
+        <!-- listado de candidatos -->
+        <section class="lista-candidatos-empresa">
+            <!-- primer candidato -->
+            <article class="tarjeta-candidato-empresa">
+                <div class="informacion-candidato">
+                    <div class="encabezado-tarjeta-candidato">
+                        <div class="avatar-candidato">
+                            <img src="imagenes/perfil.svg" alt="">
+                        </div>
+                        <div class="datos-candidato">
+                            <h2>Roberto Chen</h2>
+                            <p>62 años • Monterrey, NL</p>
+                        </div>
+                        <span class="estado-candidato pendiente">PENDIENTE</span>
+                    </div>
+                    <p class="experiencia-candidato">
+                        <strong>Experiencia:</strong> 25 años en logística y cadena de suministro.
+                        Lideró equipos de más de 40 personas en centros de distribución
+                        de alcance nacional.
+                    </p>
+                    <div class="actualizar-estado-candidato">
+                        <label for="estado-roberto">ACTUALIZAR ESTADO</label>
+
+                        <select id="estado-roberto" name="estado-roberto">
+                            <option value="pendiente" selected>Pendiente</option>
+                            <option value="revision">En revisión</option>
+                            <option value="aceptado">Aceptado</option>
+                            <option value="rechazado">Rechazado</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="boton-ver-perfil">
+                    <img src="imagenes/perfil_blanco.svg" alt="">
+                    Ver perfil
+                </a>
+                <a href="#" class="boton-descargar-cv">
+                    <img src="imagenes/descargar-cv.svg" alt="">
+                    Descargar CV
+                </a>
+            </article>
+
+            <!-- segundo candidato -->
+            <article class="tarjeta-candidato-empresa">
+                <div class="informacion-candidato">
+                    <div class="encabezado-tarjeta-candidato">
+                        <div class="avatar-candidato">
+                            <img src="imagenes/perfil.svg" alt="">
+                        </div>
+                        <div class="datos-candidato">
+                            <h2>María González</h2>
+                            <p>58 años • Ciudad de México</p>
+                        </div>
+                        <span class="estado-candidato revision">EN REVISIÓN</span>
+                    </div>
+                    <p class="experiencia-candidato">
+                        <strong>Experiencia:</strong> 18 años en desarrollo de software backend.
+                        Especialista en Java y arquitecturas de microservicios para
+                        el sector financiero.
+                    </p>
+                    <div class="actualizar-estado-candidato">
+                        <label for="estado-maria">ACTUALIZAR ESTADO</label>
+
+                        <select id="estado-maria" name="estado-maria">
+                            <option value="pendiente">Pendiente</option>
+                            <option value="revision" selected>En revisión</option>
+                            <option value="aceptado">Aceptado</option>
+                            <option value="rechazado">Rechazado</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="boton-ver-perfil">
+                    <img src="imagenes/perfil_blanco.svg" alt="">
+                    Ver perfil
+                </a>
+                <a href="#" class="boton-descargar-cv">
+                    <img src="imagenes/descargar-cv.svg" alt="">
+                    Descargar CV
+                </a> 
+            </article>
+
+            <!-- tercer candidato -->
+            <article class="tarjeta-candidato-empresa">
+                <div class="informacion-candidato">
+                    <div class="encabezado-tarjeta-candidato">
+                        <div class="avatar-candidato">
+                            <img src="imagenes/perfil.svg" alt="">
+                        </div>
+                        <div class="datos-candidato">
+                            <h2>Carlos Mendoza</h2>
+                            <p>65 años • Guadalajara, JAL</p>
+                        </div>
+                        <span class="estado-candidato aceptado">ACEPTADO</span>
+                    </div>
+                    <p class="experiencia-candidato">
+                        <strong>Experiencia:</strong> Escolaridad: Secundaria terminada.
+                        Experiencia práctica en atención al cliente y acomodo de mercancía.
+                    </p>
+                    <div class="actualizar-estado-candidato">
+                        <label for="estado-carlos">ACTUALIZAR ESTADO</label>
+                        <select id="estado-carlos" name="estado-carlos">
+                            <option value="pendiente">Pendiente</option>
+                            <option value="revision">En revisión</option>
+                            <option value="aceptado" selected>Aceptado</option>
+                            <option value="rechazado">Rechazado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <a href="#" class="boton-ver-perfil">
+                    <img src="imagenes/perfil_blanco.svg" alt="">
+                    Ver perfil
+                </a>
+                <a href="#" class="boton-descargar-cv">
+                    <img src="imagenes/descargar-cv.svg" alt="">
+                    Descargar CV
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- navegacion inferior -->
+    <nav class="navegacion-empresa-inferior" aria-label="Navegación de empresa">
+        <a href="empresa_vacantes.html">
+            <img src="imagenes/mis-vacantes.svg" alt="">
+            <span>Mis vacantes</span>
+        </a>
+        <a href="#">
+            <img src="imagenes/mensajes.svg" alt="">
+            <span>Mensajes</span>
+        </a>
+        <a href="registro_empresa.html">
+            <img src="imagenes/perfil.svg" alt="">
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <footer class="pie-pagina">
+        <p>© 2026 AMAC</p>
+        <p>¿Necesitas ayuda? Presiona <a href="#">aquí</a> para contactarte con alguien</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+
+/* pagina de vacantes de empresa */
+.pagina-empresa-vacantes {
+    padding-bottom: 7rem;
+}
+
+/* regresar */
+.regresar-empresa {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* encabezado de vacantes */
+.encabezado-vacantes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.encabezado-vacantes h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* boton para publicar vacante */
+.boton-publicar {
+    display: block;
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--color-acento);
+    color: white;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* listado de vacantes */
+.lista-vacantes-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* tarjeta de vacante */
+.tarjeta-vacante-empresa {
+    padding: 0.75rem;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+/* informacion de vacante */
+.informacion-vacante-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.titulo-vacante-empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.titulo-vacante-empresa h2 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.fecha-vacante {
+    margin: 0;
+    color: #858da3;
+    font-size: 0.875rem;
+}
+
+/* candidatos */
+.candidatos-vacante {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* estados */
+.estado-vacante {
+    flex-shrink: 0;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.estado-vacante.activa {
+    color: #16a34a;
+    border-color: #22c55e;
+}
+
+.estado-vacante.pausada {
+    color: var(--color-acento);
+    border-color: var(--color-acento);
+}
+
+/* botones de las vacantes */
+.acciones-vacante-empresa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.acciones-vacante-empresa button {
+    min-height: 44px;
+    padding: 0.5rem;
+    border: 1px solid var(--color-primario);
+    border-radius: 0.25rem;
+    background-color: white;
+    color: var(--color-primario);
+    font-family: var(--fuente-texto);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* cerrar vacante ocupa toda la fila */
+.acciones-vacante-empresa .boton-cerrar {
+    grid-column: 1 / -1;
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+/* footer oculto en telefono */
+.pagina-empresa-vacantes .pie-pagina {
+    display: none;
+}
+
+/* menu de telefono */
+.menu-empresa {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* navegacion inferior */
+.navegacion-empresa-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    background-color: white;
+    border-top: 1px solid #dddddd;
+    z-index: 10;
+}
+
+.navegacion-empresa-inferior a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 0.25rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.navegacion-empresa-inferior .activo {
+    font-weight: 600;
+}
+
+/* iconos de la navegacion */
+.navegacion-empresa-inferior img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* diseño para computadora */
+@media (min-width: 768px) {
+    /* ocultar elementos de telefono */
+    .menu-empresa,
+    .navegacion-empresa-inferior {
+        display: none;
+    }
+    /* quitar espacio de navegacion inferior */
+    .pagina-empresa-vacantes {
+        padding-bottom: 0;
+    }
+    /* centrar contenido */
+    .pagina-empresa-vacantes #principal {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2.5rem 3rem;
+    }
+    /* quitar regresar */
+    .regresar-empresa {
+        display: none;
+    }
+    /* titulo y boton en una fila */
+    .encabezado-vacantes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .encabezado-vacantes h1 {
+        font-size: 2.5rem;
+    }
+    /* boton de publicar */
+    .boton-publicar {
+        width: auto;
+        min-width: 250px;
+        padding: 0.875rem 1.5rem;
+    }
+    /* tarjetas */
+    .lista-vacantes-empresa {
+        gap: 1.25rem;
+    }
+    .tarjeta-vacante-empresa {
+        padding: 1rem;
+    }
+    .titulo-vacante-empresa h2 {
+        font-size: 1.25rem;
+    }
+    /* botones en una fila */
+    .acciones-vacante-empresa {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 600px;
+    }
+    .acciones-vacante-empresa .boton-cerrar {
+        grid-column: auto;
+    }
+    /* footer de computadora */
+    .pagina-empresa-vacantes .pie-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1280px;
+        margin: 3rem auto 0;
+        padding: 2rem 3rem;
+        border-top: 1px solid #cccccc;
+        font-size: 0.875rem;
+    }
+}
+
+/* acciones del encabezado en computadora */
+.acciones-encabezado-empresa {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acciones-encabezado-empresa .cerrar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acciones-encabezado-empresa .cerrar-sesion img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* ocultar cerrar sesion en telefono */
+@media (max-width: 767px) {
+    .acciones-encabezado-empresa .cerrar-sesion {
+        display: none;
+    }
+}
+
+/* icono de candidatos */
+.candidatos-vacante img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
