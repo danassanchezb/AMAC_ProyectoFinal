@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión de empresa | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="pagina-login">
+
+    <main id="principal">
+        <!-- tarjeta de inicio de sesion de empresa -->
+        <section class="tarjeta-login">
+            <!-- logo -->
+            <div class="logo-login">
+                <img src="imagenes/logo-amac-login.svg" alt="Logo AMAC">
+            </div>
+
+            <!-- titulo para telefono y computadora -->
+            <h1>
+                <span class="titulo-telefono">Inicia sesión de empresa</span>
+                <span class="titulo-computadora">Inicia sesión como empresa</span>
+            </h1>
+
+            <!-- formulario -->
+            <form action="empresa_vacantes.html" method="get">
+                <!-- correo electronico -->
+                <div class="campo-login">
+                    <label for="correo-empresa">Correo electrónico</label>
+                    <input type="email" id="correo-empresa"
+                           name="correo"
+                           placeholder="Ej. nombre@correo.com"
+                           autocomplete="email" required>
+                </div>
+
+                <!-- contraseña -->
+                <div class="campo-login">
+                    <label for="contrasena-empresa">Contraseña</label>
+                    <input type="password" id="contrasena-empresa"
+                           placeholder="Ingresa tu contraseña"
+                           autocomplete="current-password" required>
+                </div>
+
+                <!-- recuperar contraseña -->
+                <div class="recuperar-contrasena">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <!-- iniciar sesion -->
+                <button type="submit" class="boton-iniciar">
+                    Iniciar sesión
+                </button>
+            </form>
+
+            <!-- separador -->
+            <div class="separador-login">
+                <span>o</span>
+            </div>
+
+            <!-- boton de google solo visual -->
+            <button type="button" class="boton-google">
+                <img src="imagenes/google.svg" alt="" class="icono-google">
+                Iniciar sesión con Google
+            </button>
+
+            <!-- registro -->
+            <div class="registro-login">
+
+                <p>¿No tienes una cuenta?</p>
+                <a href="registro_empresa.html">Regístrate aquí</a>
+
+                <p>¿Eres empleado?</p>
+                <a href="login.html">Inicia sesión aquí</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

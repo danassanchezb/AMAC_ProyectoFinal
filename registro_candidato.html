@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de candidato | AMAC</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/registro_candidato.css">
+</head>
+
+<body class="pagina-registro">
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-amac.svg" alt="Logo AMAC">
+            </a>
+            <div class="enlaces-nav">
+                <a href="index.html">Buscar empleo</a>
+                <a href="mis_solicitudes.html">Mis postulaciones</a>
+            </div>
+            <a href="#" class="boton-ayuda">Ayuda</a>
+        </nav>
+    </header>
+
+    
+    <main id="principal">
+        <!-- boton para regresar -->    
+        <a href="login.html" class="regresar">
+            <img src="imagenes/flecha.svg" alt="">
+            Regresar
+        </a>
+
+        <!-- formulario de registro -->
+        <section class="contenedor-registro">
+            <div class="encabezado-registro">
+                <h1>Registro de Candidato</h1>
+                <p>Completa el formulario para unirte</p>
+            </div>
+            <form action="index.html" method="get" class="formulario-registro">
+                <!-- datos personales -->
+                <section class="seccion-registro">
+                    <h2>Datos Personales</h2>
+                    <div class="campos-registro">
+                        <div class="campo-registro">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre"
+                                placeholder="Tu nombre" required>
+                        </div>
+                        <div class="campo-registro">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos"
+                                placeholder="Tus apellidos" required>
+                        </div>
+                        <div class="campo-registro">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edad" name="edad"
+                                placeholder="Tu edad" min="18" required>
+                        </div>
+                        <div class="campo-registro">
+                            <label for="genero">Género</label>
+                            <select id="genero" name="genero" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="mujer">Mujer</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="otro">Otro</option>
+                                <option value="no-decir">Prefiero no decirlo</option>
+                            </select>
+                        </div>
+                        <div class="campo-registro campo-completo">
+                            <label for="escolaridad">Nivel de estudios</label>
+                            <select id="escolaridad" name="escolaridad" required>
+                                <option value="">Selecciona tu nivel educativo</option>
+                                <option value="primaria">Primaria</option>
+                                <option value="secundaria">Secundaria</option>
+                                <option value="preparatoria">Preparatoria</option>
+                                <option value="universidad">Universidad</option>
+                                <option value="posgrado">Posgrado</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- datos de contacto -->
+                <section class="seccion-registro">
+                    <h2>Datos de Contacto</h2>
+                    <div class="campos-registro">
+                        <div class="campo-registro">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo"
+                                placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="campo-registro">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono"
+                                placeholder="(000) 000-0000" required>
+                        </div>
+                        <div class="campo-registro campo-completo">
+                            <label for="direccion">Dirección completa</label>
+                            <input type="text" id="direccion" name="direccion"
+                                placeholder="Calle, Ciudad, Estado, C.P.">
+                        </div>
+                    </div>
+
+                    <fieldset class="metodo-contacto">
+                        <legend>Método de contacto preferido</legend>
+                        <div class="opciones-contacto">
+                            <label>
+                                <input type="radio" name="contacto" value="correo" required>
+                                Correo
+                            </label>
+                            <label>
+                                <input type="radio" name="contacto" value="telefono">
+                                Teléfono
+                            </label>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <!-- experiencia -->
+                <section class="seccion-registro">
+                    <h2>Experiencia y Habilidades</h2>
+                    <div class="campo-registro">
+                        <label for="experiencia">
+                            Cuéntanos sobre tu experiencia y habilidades
+                        </label>
+                        <textarea id="experiencia" name="experiencia" rows="5"
+                                placeholder="Describe tu experiencia laboral previa y tus principales habilidades..."></textarea>
+                    </div>
+                </section>
+
+                
+                <!-- subir curriculum -->
+                <div class="subir-cv">
+                    <p>Subir CV</p>
+
+                    <input type="file" id="cv" name="cv"
+                        accept=".pdf,.doc,.docx">
+
+                    <label for="cv" class="boton-subir-cv">
+                        Seleccionar archivo
+                    </label>
+                </div>
+
+                <!-- terminos y condiciones -->
+                <div class="aceptaciones-registro">
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto los Términos y Condiciones
+                    </label>
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto el Aviso de Privacidad
+                    </label>
+                </div>
+
+                <!-- boton para registrarse -->
+                <button type="submit" class="boton-registrarse">
+                    Registrarme
+                </button>
+
+                <p class="enlace-iniciar">
+                    ¿Ya tienes una cuenta?
+                    <a href="login.html">Inicia sesión aquí</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 AMAC</p>
+
+        <p>¿Necesitas ayuda? Presiona aquí para contactarte con alguien</p>
+
+        <div class="enlaces-footer">
+            <span>Aviso de Privacidad</span>
+            <span>Términos de Uso</span>
+            <span>Soporte</span>
+        </div>
+    </footer>
+</body>
+</html>

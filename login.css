@@ -1,0 +1,204 @@
+
+/* pagina de inicio de sesion */
+/* primero diseño para telefono */
+
+.pagina-login {
+    background-color: white;
+    padding-bottom: 0;
+}
+
+/* contenido principal */
+.pagina-login #principal {
+    padding: 1rem;
+}
+
+/* tarjeta de login */
+.tarjeta-login {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: white;
+}
+
+/* logo */
+.logo-login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo-login img {
+    width: 13rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* titulo */
+.tarjeta-login h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* campos del formulario */
+.campo-login {
+    margin-bottom: 1.5rem;
+}
+
+.campo-login label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.campo-login input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    color: var(--color-primario);
+}
+
+/* recuperar contraseña */
+.recuperar-contrasena {
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.recuperar-contrasena a {
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* boton iniciar sesion */
+.boton-iniciar {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* separador */
+.separador-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.separador-login::before,
+.separador-login::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #dddddd;
+}
+
+.separador-login span {
+    color: var(--color-primario);
+}
+
+/* boton de google */
+.boton-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem;
+    background-color: white;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icono-google {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4285F4;
+}
+
+/* enlaces de registro */
+.registro-login {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.registro-login p {
+    color: #626879;
+    margin: 1rem 0 0.25rem;
+}
+
+.registro-login a {
+    display: inline-block;
+    color: var(--color-primario);
+    font-weight: 600;
+    min-height: 44px;
+    padding: 0.5rem;
+}
+
+/* titulo para telefono */
+.titulo-telefono {
+    display: inline;
+}
+
+.titulo-computadora {
+    display: none;
+}
+
+/* icono de google */
+.boton-google .icono-google {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* diseño para computadora */
+@media (min-width: 1024px) {
+
+    .pagina-login #principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+    .tarjeta-login {
+        max-width: 28rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 12px #00000015;
+    }
+    .logo-login img {
+        width: 10rem;
+    }
+    .tarjeta-login h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    /* titulo para computadora */
+    .titulo-telefono {
+        display: none;
+    }
+
+    .titulo-computadora {
+        display: inline;
+    }
+}
