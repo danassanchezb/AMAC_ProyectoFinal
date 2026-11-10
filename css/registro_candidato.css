@@ -1,0 +1,281 @@
+
+/* pagina de registro de candidato */
+
+/* boton regresar */
+.pagina-registro .regresar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pagina-registro .regresar img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* contenedor del formulario */
+.contenedor-registro {
+    width: 100%;
+    background-color: white;
+}
+
+/* titulo del registro */
+.encabezado-registro {
+    margin-bottom: 1.5rem;
+}
+
+.encabezado-registro h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.encabezado-registro p {
+    display: none;
+}
+
+/* formulario */
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* secciones */
+.seccion-registro {
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 1.5rem;
+}
+
+.seccion-registro h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* campos del formulario */
+.campos-registro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.campo-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo-registro label,
+.metodo-contacto legend {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.campo-registro input,
+.campo-registro select,
+.campo-registro textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.75rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: var(--color-primario);
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+}
+
+.campo-registro textarea {
+    resize: vertical;
+}
+
+/* metodo de contacto */
+.metodo-contacto {
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.metodo-contacto legend {
+    margin-bottom: 0.75rem;
+}
+
+.opciones-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.opciones-contacto label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #bbbbbb;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    min-height: 44px;
+}
+
+/* subir curriculum */
+.subir-cv {
+    border: 2px dashed #aaaaaa;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.subir-cv label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.subir-cv input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.875rem;
+}
+
+/* terminos y condiciones */
+.aceptaciones-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.aceptaciones-registro label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.aceptaciones-registro input {
+    margin-top: 0.2rem;
+}
+
+/* boton registrarme */
+.boton-registrarse {
+    width: 100%;
+    min-height: 48px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* enlace para iniciar sesion */
+.enlace-iniciar {
+    text-align: center;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.enlace-iniciar a {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+/* ocultar pie de pagina en telefono */
+.pagina-registro .pie-pagina {
+    display: none;
+}
+
+/* boton para subir cv */
+.subir-cv p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.subir-cv input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.boton-subir-cv {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subir-cv:focus-within .boton-subir-cv {
+    outline: 2px solid var(--color-primario);
+}
+
+/* computadora */
+@media (min-width: 1024px) {
+    /* mostrar subtitulo en computadora */
+    .encabezado-registro p {
+        display: block;
+        color: white;
+    }
+    /* titulo del formulario */
+    .encabezado-registro h1 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    /* formulario centrado */
+    .contenedor-registro {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px #00000015;
+    }
+    /* encabezado azul */
+    .encabezado-registro {
+        background-color: var(--color-primario);
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    /* campos en dos columnas */
+    .campos-registro {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    /* campos que ocupan todo el ancho */
+    .campo-completo {
+        grid-column: 1 / -1;
+    }
+    /* opciones de contacto una al lado de otra */
+    .opciones-contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    /* espacio dentro del formulario */
+    .formulario-registro {
+        padding: 1.5rem;
+    }
+    /* footer en computadora */
+    .pagina-registro .pie-pagina {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        border-top: 1px solid #dddddd;
+    }
+    .pagina-registro .enlaces-footer {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}
