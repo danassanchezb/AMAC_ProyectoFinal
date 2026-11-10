@@ -77,4 +77,11 @@ Computadora
 <img width="787" height="535" alt="Captura de pantalla 2026-11-09 a la(s) 7 35 43 p m" src="https://github.com/user-attachments/assets/a78c5113-8d8f-4418-ae28-c302088ea8be" />
 
 
-****
+**Lighthouse - Accessibility**
+
+<img width="1512" height="982" alt="Captura de pantalla 2026-11-09 a la(s) 8 21 44 p m" src="https://github.com/user-attachments/assets/e534f8a8-b583-4470-a950-77c827abe7df" />
+
+
+**Link vercel**
+
+https://amacproyectofinal.vercel.app/index.html?
