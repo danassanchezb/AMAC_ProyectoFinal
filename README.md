@@ -27,6 +27,7 @@ Fernando Garza
 - Git y GitHub
 - Figma
 - Imágenes e iconos SVG
+- Claude IA para organización y legibilidad de los archivos HTML y CSS 
 
 
 **Paleta de colores**
